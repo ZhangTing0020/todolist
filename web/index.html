@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>实现页面</title>
+  <link rel="stylesheet" href="./index/base.css">
+  <link rel="stylesheet" href="./index/index.css">
+  <link rel="stylesheet" href="index/app.css">
+</head>
+
+<body>
+  <section class="todoapp">
+    <header class="header">
+      <h1>待办事项</h1>
+      <input class="new-todo" placeholder="输入待办事项?" autofocus>
+    </header>
+    <section class="main"> 
+      <input id="toggle-all" class="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+      <!-- 此处为待办事项列表 -->
+      <ul class="todo-list">
+        <li>
+          <div class="view">
+            <input class="toggle" type="checkbox">
+            <label>测试数据</label>
+            <button class="destroy"></button>
+          </div>
+          <input class="edit" value="Create a TodoMVC template">
+        </li>
+      </ul>
+    </section>
+  </section>
+  <script src="./assets/lib/jquery.js"></script>
+  
+  <script src="./common.js"></script>
+  <script src="./index/index.js"></script>
+
+  <script>
+    // 需求1：输入后，按下回车，下面列表显示输入一条
+    //     按下回车：e.keyCode==13  keydown
+    //     获取输入框值  JQ对象.val();
+    //     创建新的JQ对象；$();
+    //     添加到列表中！
+    //     置空输入框  JQ对象.val("")
+
+
+    //  需求2：点击X 删除所在行
+
+
+    //  需求3： 点击圆圈的时候，给当前所在li加completed类名
+  </script>
+</body>
+
+</html>
